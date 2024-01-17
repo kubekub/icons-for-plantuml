@@ -1,1 +1,2 @@
-# icons-for-plantuml
+# Custom Sprites
+Custom sprites for plantuml diagrams
