@@ -12,6 +12,7 @@ create-kiali: ## create-kiali
 	cd dist; plantuml -encodesprite kiali.png > kiali.puml
 
 create-kyverno: ## create-kyverno
+	cd dist;convert kyverno.png -resize 100x100 kyverno.png
 	cd dist; plantuml -encodesprite kyverno.png > kyverno.puml
 
 create-prometheus: ## create-prometheus
@@ -27,9 +28,11 @@ create-external-secrets-operator: ## create-external-secrets-operator
 	cd dist; plantuml -encodesprite external-secrets-operator.png > external-secrets-operator.puml
 
 create-falco: ## create-falco
+	cd dist;convert falco.png -resize 100x100 falco.png
 	cd dist; plantuml -encodesprite falco.png > falco.puml
 
 create-istio: ## create-istio
+	cd dist;convert istio.png -resize 100x100 istio.png
 	cd dist; plantuml -encodesprite istio.png > istio.puml
 
 create-external-secrets-operator: ## create-external-secrets-operator
