@@ -42,5 +42,29 @@ create-external-secrets-operator: ## create-external-secrets-operator
 create-cert-manager: ## create-cert-manager
 	cd dist;convert cert-manager.png -resize 100x100 cert-manager.png
 	cd dist; plantuml -encodesprite cert-manager.png > cert-manager.puml
+
+create-external-dns: ## create-external-dns
+	cd dist;convert external-dns.png -resize 100x100 external-dns.png
+	cd dist; plantuml -encodesprite external-dns.png > external-dns.puml
+
+create-grafana-loki: ## create-grafana-loki
+	cd dist;convert grafana-loki.png -resize 100x100 grafana-loki.png
+	cd dist; plantuml -encodesprite grafana-loki.png > grafana-loki.puml
+
+create-grafana: ## create-grafana
+	cd dist;convert grafana.png -resize 100x100 grafana.png
+	cd dist; plantuml -encodesprite grafana.png > grafana.puml
+
+create-opsgenie: ## create-opsgenie
+	cd dist;convert opsgenie.png -resize 100x100 opsgenie.png
+	cd dist; plantuml -encodesprite opsgenie.png > opsgenie.puml
+
+create-statuspage: ## create-statuspage
+	cd dist;convert statuspage.png -resize 100x100 statuspage.png
+	cd dist; plantuml -encodesprite statuspage.png > statuspage.puml
+
+create-itps: ## create-itps
+	# cd dist;convert itps.png -resize 100x100 itps.png
+	cd dist; plantuml -encodesprite itps.png > itps.puml
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
