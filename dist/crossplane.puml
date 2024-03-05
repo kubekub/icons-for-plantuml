@@ -4,3 +4,19 @@ bOT498Lp7SUm1YhNi4UXxvThA7ZDBSTB3uSJbfCY4eQYb6TQKLuKzXxDRIyyDlQyNHJNg33K7WTBz30m
 VF_yoVt3gubOmRirjv_TYNcQ0JU5vmjT9NvwliFp-Ej5v1ZVsvdh-x3d-omhTPgtpFLMl6cnPqdt
 }
 
+-e 
+
+!define KIALI.PNG_CROSSPLANE(_color)                                 SPRITE_PUT(                                        kiali.png_crossplane, _color)
+!define KIALI.PNG_CROSSPLANE(_color, _scale)                         SPRITE_PUT(                                        kiali.png_crossplane, _color, _scale)
+!define KIALI.PNG_CROSSPLANE(_color, _scale, _alias)                 SPRITE_ENT(  _alias, KIALI.PNG CROSSPLANE,         kiali.png_crossplane, _color, _scale)
+!define KIALI.PNG_CROSSPLANE(_color, _scale, _alias, _shape)         SPRITE_ENT(  _alias, KIALI.PNG CROSSPLANE,         kiali.png_crossplane, _color, _scale, _shape)
+!define KIALI.PNG_CROSSPLANE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, KIALI.PNG CROSSPLANE, _label, kiali.png_crossplane, _color, _scale, _shape)
+skinparam folderBackgroundColor<<KIALI.PNG CROSSPLANE>> White
+-e 
+
+!define SVG_CROSSPLANE(_color)                                 SPRITE_PUT(                                  svg_crossplane, _color)
+!define SVG_CROSSPLANE(_color, _scale)                         SPRITE_PUT(                                  svg_crossplane, _color, _scale)
+!define SVG_CROSSPLANE(_color, _scale, _alias)                 SPRITE_ENT(  _alias, SVG CROSSPLANE,         svg_crossplane, _color, _scale)
+!define SVG_CROSSPLANE(_color, _scale, _alias, _shape)         SPRITE_ENT(  _alias, SVG CROSSPLANE,         svg_crossplane, _color, _scale, _shape)
+!define SVG_CROSSPLANE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, SVG CROSSPLANE, _label, svg_crossplane, _color, _scale, _shape)
+skinparam folderBackgroundColor<<SVG CROSSPLANE>> White

@@ -1,0 +1,24 @@
+-e 
+
+!define KIALI_LOGO_DARKBKG_1280PX.SVG_KIALI(_color)                                 SPRITE_PUT(                                                       kiali_logo_darkbkg_1280px.svg_kiali, _color)
+!define KIALI_LOGO_DARKBKG_1280PX.SVG_KIALI(_color, _scale)                         SPRITE_PUT(                                                       kiali_logo_darkbkg_1280px.svg_kiali, _color, _scale)
+!define KIALI_LOGO_DARKBKG_1280PX.SVG_KIALI(_color, _scale, _alias)                 SPRITE_ENT(  _alias, KIALI_LOGO_DARKBKG_1280PX.SVG KIALI,         kiali_logo_darkbkg_1280px.svg_kiali, _color, _scale)
+!define KIALI_LOGO_DARKBKG_1280PX.SVG_KIALI(_color, _scale, _alias, _shape)         SPRITE_ENT(  _alias, KIALI_LOGO_DARKBKG_1280PX.SVG KIALI,         kiali_logo_darkbkg_1280px.svg_kiali, _color, _scale, _shape)
+!define KIALI_LOGO_DARKBKG_1280PX.SVG_KIALI(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, KIALI_LOGO_DARKBKG_1280PX.SVG KIALI, _label, kiali_logo_darkbkg_1280px.svg_kiali, _color, _scale, _shape)
+skinparam folderBackgroundColor<<KIALI_LOGO_DARKBKG_1280PX.SVG KIALI>> White
+-e 
+
+!define KIALI.PNG_KIALI(_color)                                 SPRITE_PUT(                                   kiali.png_kiali, _color)
+!define KIALI.PNG_KIALI(_color, _scale)                         SPRITE_PUT(                                   kiali.png_kiali, _color, _scale)
+!define KIALI.PNG_KIALI(_color, _scale, _alias)                 SPRITE_ENT(  _alias, KIALI.PNG KIALI,         kiali.png_kiali, _color, _scale)
+!define KIALI.PNG_KIALI(_color, _scale, _alias, _shape)         SPRITE_ENT(  _alias, KIALI.PNG KIALI,         kiali.png_kiali, _color, _scale, _shape)
+!define KIALI.PNG_KIALI(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, KIALI.PNG KIALI, _label, kiali.png_kiali, _color, _scale, _shape)
+skinparam folderBackgroundColor<<KIALI.PNG KIALI>> White
+-e 
+
+!define SVG_KIALI(_color)                                 SPRITE_PUT(                             svg_kiali, _color)
+!define SVG_KIALI(_color, _scale)                         SPRITE_PUT(                             svg_kiali, _color, _scale)
+!define SVG_KIALI(_color, _scale, _alias)                 SPRITE_ENT(  _alias, SVG KIALI,         svg_kiali, _color, _scale)
+!define SVG_KIALI(_color, _scale, _alias, _shape)         SPRITE_ENT(  _alias, SVG KIALI,         svg_kiali, _color, _scale, _shape)
+!define SVG_KIALI(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, SVG KIALI, _label, svg_kiali, _color, _scale, _shape)
+skinparam folderBackgroundColor<<SVG KIALI>> White

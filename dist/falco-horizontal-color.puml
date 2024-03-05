@@ -1,0 +1,16 @@
+-e 
+
+!define KIALI.PNG_FALCO-HORIZONTAL-COLOR(_color)                                 SPRITE_PUT(                                                    kiali.png_falco-horizontal-color, _color)
+!define KIALI.PNG_FALCO-HORIZONTAL-COLOR(_color, _scale)                         SPRITE_PUT(                                                    kiali.png_falco-horizontal-color, _color, _scale)
+!define KIALI.PNG_FALCO-HORIZONTAL-COLOR(_color, _scale, _alias)                 SPRITE_ENT(  _alias, KIALI.PNG FALCO-HORIZONTAL-COLOR,         kiali.png_falco-horizontal-color, _color, _scale)
+!define KIALI.PNG_FALCO-HORIZONTAL-COLOR(_color, _scale, _alias, _shape)         SPRITE_ENT(  _alias, KIALI.PNG FALCO-HORIZONTAL-COLOR,         kiali.png_falco-horizontal-color, _color, _scale, _shape)
+!define KIALI.PNG_FALCO-HORIZONTAL-COLOR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, KIALI.PNG FALCO-HORIZONTAL-COLOR, _label, kiali.png_falco-horizontal-color, _color, _scale, _shape)
+skinparam folderBackgroundColor<<KIALI.PNG FALCO-HORIZONTAL-COLOR>> White
+-e 
+
+!define SVG_FALCO-HORIZONTAL-COLOR(_color)                                 SPRITE_PUT(                                              svg_falco-horizontal-color, _color)
+!define SVG_FALCO-HORIZONTAL-COLOR(_color, _scale)                         SPRITE_PUT(                                              svg_falco-horizontal-color, _color, _scale)
+!define SVG_FALCO-HORIZONTAL-COLOR(_color, _scale, _alias)                 SPRITE_ENT(  _alias, SVG FALCO-HORIZONTAL-COLOR,         svg_falco-horizontal-color, _color, _scale)
+!define SVG_FALCO-HORIZONTAL-COLOR(_color, _scale, _alias, _shape)         SPRITE_ENT(  _alias, SVG FALCO-HORIZONTAL-COLOR,         svg_falco-horizontal-color, _color, _scale, _shape)
+!define SVG_FALCO-HORIZONTAL-COLOR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, SVG FALCO-HORIZONTAL-COLOR, _label, svg_falco-horizontal-color, _color, _scale, _shape)
+skinparam folderBackgroundColor<<SVG FALCO-HORIZONTAL-COLOR>> White

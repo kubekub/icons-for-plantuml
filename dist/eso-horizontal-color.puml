@@ -1,0 +1,16 @@
+-e 
+
+!define KIALI.PNG_ESO-HORIZONTAL-COLOR(_color)                                 SPRITE_PUT(                                                  kiali.png_eso-horizontal-color, _color)
+!define KIALI.PNG_ESO-HORIZONTAL-COLOR(_color, _scale)                         SPRITE_PUT(                                                  kiali.png_eso-horizontal-color, _color, _scale)
+!define KIALI.PNG_ESO-HORIZONTAL-COLOR(_color, _scale, _alias)                 SPRITE_ENT(  _alias, KIALI.PNG ESO-HORIZONTAL-COLOR,         kiali.png_eso-horizontal-color, _color, _scale)
+!define KIALI.PNG_ESO-HORIZONTAL-COLOR(_color, _scale, _alias, _shape)         SPRITE_ENT(  _alias, KIALI.PNG ESO-HORIZONTAL-COLOR,         kiali.png_eso-horizontal-color, _color, _scale, _shape)
+!define KIALI.PNG_ESO-HORIZONTAL-COLOR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, KIALI.PNG ESO-HORIZONTAL-COLOR, _label, kiali.png_eso-horizontal-color, _color, _scale, _shape)
+skinparam folderBackgroundColor<<KIALI.PNG ESO-HORIZONTAL-COLOR>> White
+-e 
+
+!define SVG_ESO-HORIZONTAL-COLOR(_color)                                 SPRITE_PUT(                                            svg_eso-horizontal-color, _color)
+!define SVG_ESO-HORIZONTAL-COLOR(_color, _scale)                         SPRITE_PUT(                                            svg_eso-horizontal-color, _color, _scale)
+!define SVG_ESO-HORIZONTAL-COLOR(_color, _scale, _alias)                 SPRITE_ENT(  _alias, SVG ESO-HORIZONTAL-COLOR,         svg_eso-horizontal-color, _color, _scale)
+!define SVG_ESO-HORIZONTAL-COLOR(_color, _scale, _alias, _shape)         SPRITE_ENT(  _alias, SVG ESO-HORIZONTAL-COLOR,         svg_eso-horizontal-color, _color, _scale, _shape)
+!define SVG_ESO-HORIZONTAL-COLOR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, SVG ESO-HORIZONTAL-COLOR, _label, svg_eso-horizontal-color, _color, _scale, _shape)
+skinparam folderBackgroundColor<<SVG ESO-HORIZONTAL-COLOR>> White

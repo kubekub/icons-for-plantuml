@@ -1,0 +1,16 @@
+-e 
+
+!define KIALI.PNG_CERT-MANAGER-ICON-COLOR(_color)                                 SPRITE_PUT(                                                     kiali.png_cert-manager-icon-color, _color)
+!define KIALI.PNG_CERT-MANAGER-ICON-COLOR(_color, _scale)                         SPRITE_PUT(                                                     kiali.png_cert-manager-icon-color, _color, _scale)
+!define KIALI.PNG_CERT-MANAGER-ICON-COLOR(_color, _scale, _alias)                 SPRITE_ENT(  _alias, KIALI.PNG CERT-MANAGER-ICON-COLOR,         kiali.png_cert-manager-icon-color, _color, _scale)
+!define KIALI.PNG_CERT-MANAGER-ICON-COLOR(_color, _scale, _alias, _shape)         SPRITE_ENT(  _alias, KIALI.PNG CERT-MANAGER-ICON-COLOR,         kiali.png_cert-manager-icon-color, _color, _scale, _shape)
+!define KIALI.PNG_CERT-MANAGER-ICON-COLOR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, KIALI.PNG CERT-MANAGER-ICON-COLOR, _label, kiali.png_cert-manager-icon-color, _color, _scale, _shape)
+skinparam folderBackgroundColor<<KIALI.PNG CERT-MANAGER-ICON-COLOR>> White
+-e 
+
+!define SVG_CERT-MANAGER-ICON-COLOR(_color)                                 SPRITE_PUT(                                               svg_cert-manager-icon-color, _color)
+!define SVG_CERT-MANAGER-ICON-COLOR(_color, _scale)                         SPRITE_PUT(                                               svg_cert-manager-icon-color, _color, _scale)
+!define SVG_CERT-MANAGER-ICON-COLOR(_color, _scale, _alias)                 SPRITE_ENT(  _alias, SVG CERT-MANAGER-ICON-COLOR,         svg_cert-manager-icon-color, _color, _scale)
+!define SVG_CERT-MANAGER-ICON-COLOR(_color, _scale, _alias, _shape)         SPRITE_ENT(  _alias, SVG CERT-MANAGER-ICON-COLOR,         svg_cert-manager-icon-color, _color, _scale, _shape)
+!define SVG_CERT-MANAGER-ICON-COLOR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, SVG CERT-MANAGER-ICON-COLOR, _label, svg_cert-manager-icon-color, _color, _scale, _shape)
+skinparam folderBackgroundColor<<SVG CERT-MANAGER-ICON-COLOR>> White
