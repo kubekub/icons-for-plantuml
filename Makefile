@@ -9,7 +9,7 @@ download-script: ## download-script
 
 create-kiali: ## create-kiali
 	cd dist;convert kiali.png -resize 100x100 kiali.png
-	cd dist; sh create_sprites.sh kiali.png
+	cd dist; plantuml -encodesprite kiali.png > kiali.puml
 
 
 help:
