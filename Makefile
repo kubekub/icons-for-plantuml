@@ -35,10 +35,6 @@ create-istio: ## create-istio
 	cd dist;convert istio.png -resize 100x100 istio.png
 	cd dist; plantuml -encodesprite istio.png > istio.puml
 
-create-external-secrets-operator: ## create-external-secrets-operator
-	cd dist;convert external-secrets-operator.png -resize 100x100 external-secrets-operator.png
-	cd dist; plantuml -encodesprite external-secrets-operator.png > external-secrets-operator.puml
-
 create-cert-manager: ## create-cert-manager
 	cd dist;convert cert-manager.png -resize 100x100 cert-manager.png
 	cd dist; plantuml -encodesprite cert-manager.png > cert-manager.puml
@@ -72,9 +68,11 @@ create-itps: ## create-itps
 	cd dist; plantuml -encodesprite itps.png > itps.puml
 
 create-slack: ## create-slack
+	cd dist;convert slack.png -resize 100x100 slack.png
 	cd dist; plantuml -encodesprite slack.png > slack.puml
 
 create-teams: ## create-teams
+	cd dist;convert teams.png -resize 100x100 teams.png
 	cd dist; plantuml -encodesprite teams.png > teams.puml
 
 create-pyrra: ## create-pyrra
