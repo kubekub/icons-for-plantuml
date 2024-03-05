@@ -64,7 +64,7 @@ create-statuspage: ## create-statuspage
 	cd dist; plantuml -encodesprite statuspage.png > statuspage.puml
 
 create-itps: ## create-itps
-	# cd dist;convert itps.png -resize 100x100 itps.png
+	cd dist;convert itps.png -resize 100x100 itps.png
 	cd dist; plantuml -encodesprite itps.png > itps.puml
 
 create-slack: ## create-slack
