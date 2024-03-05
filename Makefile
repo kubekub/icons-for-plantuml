@@ -39,5 +39,8 @@ create-external-secrets-operator: ## create-external-secrets-operator
 	cd dist;convert external-secrets-operator.png -resize 100x100 external-secrets-operator.png
 	cd dist; plantuml -encodesprite external-secrets-operator.png > external-secrets-operator.puml
 
+create-cert-manager: ## create-cert-manager
+	cd dist;convert cert-manager.png -resize 100x100 cert-manager.png
+	cd dist; plantuml -encodesprite cert-manager.png > cert-manager.puml
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
