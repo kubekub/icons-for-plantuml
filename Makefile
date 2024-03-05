@@ -51,6 +51,10 @@ create-grafana-loki: ## create-grafana-loki
 	cd dist;convert grafana-loki.png -resize 100x100 grafana-loki.png
 	cd dist; plantuml -encodesprite grafana-loki.png > grafana-loki.puml
 
+create-grafana-tempo: ## create-grafana-tempo
+	cd dist;convert grafana-tempo.png -resize 100x100 grafana-tempo.png
+	cd dist; plantuml -encodesprite grafana-tempo.png > grafana-tempo.puml
+
 create-grafana: ## create-grafana
 	cd dist;convert grafana.png -resize 100x100 grafana.png
 	cd dist; plantuml -encodesprite grafana.png > grafana.puml
@@ -73,5 +77,8 @@ create-slack: ## create-slack
 create-teams: ## create-teams
 	cd dist; plantuml -encodesprite teams.png > teams.puml
 
+create-pyrra: ## create-pyrra
+	cd dist;convert pyrra.png -resize 100x100 pyrra.png
+	cd dist; plantuml -encodesprite pyrra.png > pyrra.puml
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
