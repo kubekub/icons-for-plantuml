@@ -33,7 +33,7 @@ create-falco: ## create-falco
 
 create-istio: ## create-istio
 	cd dist;convert istio.png -resize 100x100 istio.png
-	cd dist; plantuml -encodesprite istio.png > istio.puml
+	cd dist; plantuml -encodesprite 16 istio.png > istio.puml
 
 create-cert-manager: ## create-cert-manager
 	cd dist;convert cert-manager.png -resize 100x100 cert-manager.png
@@ -49,7 +49,7 @@ create-grafana-loki: ## create-grafana-loki
 
 create-grafana-tempo: ## create-grafana-tempo
 	cd dist;convert grafana-tempo.png -resize 100x100 grafana-tempo.png
-	cd dist; plantuml -encodesprite grafana-tempo.png > grafana-tempo.puml
+	cd dist; plantuml -encodesprite 4 grafana-tempo.png > grafana-tempo.puml
 
 create-grafana: ## create-grafana
 	cd dist;convert grafana.png -resize 100x100 grafana.png
@@ -77,6 +77,6 @@ create-teams: ## create-teams
 
 create-pyrra: ## create-pyrra
 	cd dist;convert pyrra.png -resize 100x100 pyrra.png
-	cd dist; plantuml -encodesprite pyrra.png > pyrra.puml
+	cd dist; plantuml -encodesprite 8 pyrra.png > pyrra.puml
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
